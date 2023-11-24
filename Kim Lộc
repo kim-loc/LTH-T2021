@@ -1,0 +1,95 @@
+Câu 5:
+        {
+            double DTB;
+
+            Console.Write("Nhap diem trung binh cua hoc sinh: ");
+            DTB = Convert.ToDouble(Console.ReadLine());
+
+            if (DTB >= 9.0)
+            {
+                Console.WriteLine("Xuat sac");
+            }
+            else if (DTB >= 8.0)
+            {
+                Console.WriteLine("Gioi");
+            }
+            else if (DTB >= 6.5)
+            {
+                Console.WriteLine("Kha");
+            }
+            else if (DTB >= 5.0)
+            {
+                Console.WriteLine("Trung binh");
+            }
+            else if (DTB >= 3.5)
+            {
+                Console.WriteLine("Yeu");
+            }
+            else
+            {
+                Console.WriteLine("Kem");
+            }
+        }
+Câu 6: 
+        {
+            int[] menhGia = { 500000, 200000, 100000, 50000 };
+            int soTien;
+            int soLuong;
+
+            Console.Write("Nhap so tien (la boi so cua 50.000): ");
+            soTien = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("So tien " + soTien + " co the doi thanh:");
+
+            for (int i = 0; i < menhGia.Length; i++)
+            {
+                soLuong = soTien / menhGia[i];
+                soTien %= menhGia[i];
+                if (soLuong > 0)
+                {
+                    Console.WriteLine(soLuong + " to " + menhGia[i]);
+                }
+            }
+        }
+  Câu 7: 
+           {
+            double CSD;
+            double t;
+            double thueGTGT;
+            Console.Write("Nhap chi so dien: ");
+            CSD = Convert.ToDouble(Console.ReadLine());
+
+            if (CSD>=1 && CSD>= 50)
+            {
+                t = CSD * 1484;
+            }
+            else if (CSD >= 51 && CSD >=100)
+            {
+                t = CSD * 1533;
+            }
+            else if (CSD >= 101 && CSD >= 200)
+            {
+                t = CSD * 1786;
+            }
+            else if (CSD >= 201 && CSD >= 300)
+            {
+                t = CSD * 2242;
+            }
+            else if (CSD >= 301 && CSD >= 400)
+            {
+                t = CSD * 2503;
+            }
+            else
+            {
+                t = CSD * 2587;
+            }
+            thueGTGT = t * 0.1;
+            double tongTien = t + thueGTGT;
+
+            Console.WriteLine("Tien dien: " + t + " VND");
+            Console.WriteLine("Thue GTGT (10%): " + thueGTGT + " VND");
+            Console.WriteLine("Tong cong: " + tongTien + " VND");
+           }
+           
+
+    
